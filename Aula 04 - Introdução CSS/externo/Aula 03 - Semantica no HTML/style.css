@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(238, 252, 252);
+}
+
+header {
+    background-color: rgb(184, 238, 238);
+}
+
+header> h1{
+     text-align: center;
+}
+
+header > nav > a {
+    text-decoration: none;
+}
