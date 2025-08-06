@@ -42,5 +42,4 @@ img{
 
 footer{
     position: fixed;
-    bottom: ;
 }
