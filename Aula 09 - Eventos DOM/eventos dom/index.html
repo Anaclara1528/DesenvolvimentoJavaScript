@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div{
+            width: 300px;
+            margin: 20px auto;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div onclick="mudaCor()" id="caixa" onmouseout="retornarCor()">
+        CAIXA
+    </div>
+
+    <script>
+        function mudaCor(){
+        let caixa = document.getElementById("caixa")
+        caixa.style.background = "blue"
+        }
+        
+        function retornarCor(){
+        let caixa = document.getElementById("caixa")
+        caixa.style.background = "white"
+        }
+
+        
+    </script>
+    
+</body>
+</html>
