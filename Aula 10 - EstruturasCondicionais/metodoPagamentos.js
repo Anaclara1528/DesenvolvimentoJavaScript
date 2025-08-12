@@ -6,7 +6,7 @@
 let valorGasto = 1000
 let metodoPagamento = 1
 
-if ( =metodoPagamento== 1){ 
+if ( = metodoPagamento == 1){ 
     console.log("MÉTODO DE PAGAMENTO BOLETO/PIX")
     let valorFinal = valorGasto * 0.9
     console.log("o valor final foi de R$" + valorFinal);
