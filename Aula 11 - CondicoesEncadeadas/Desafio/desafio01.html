@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>CAlCULADORA</h3>
+
+     <input id="n1" type="number" placeholder="1 número">
+     <input id="n2" type="number" placeholder="2 número">
+
+     <select id="op">
+
+        <option value="+">soma</option>
+        <option value="-">subtração</option>
+        <option value="*">multiplição</option>
+        <option value="/">divisão</option>
+
+     </select>
+
+     <button onclick="calcular()">Calcular</button>
+     <p id="res"></p>
+
+     <script>
+        function calcular() {
+            let a = parseInt(document.getElementById("n1").value);
+            let b = parseInt(document.getElementById("n2").value);
+            let op = document.getElementById("op").value;
+            let r;
+
+            if(op == "+"){
+                r = a + b;
+
+            } else if(op == "-"){
+                r = a - b;
+
+            } else if(op == "-"){
+                r = a - b;
+
+            } else if(op == "*"){
+                r = a * b;
+
+            } else if(op == "/"){
+               if(b == 0){
+                r = "Erro: Divisão por zero!";
+               } else{
+                r = a / b;
+               }
+            } else{
+                r = "Operação Inválida";
+            }
+
+             document.getElementById("res").innerHTML = "Resultado" + r;
+        }
+     </script>
+
+
+</body>
+</html>
