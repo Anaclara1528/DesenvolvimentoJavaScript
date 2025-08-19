@@ -1,5 +1,11 @@
-// Você foi contratado para criar um programa em JavaScript que gere uma Progressão Aritmética (PA).
-// O programa deve pedir ao usuário três informações:
-// O primeiro termo da PA (a1);
-// A razão da PA (r);
-// A quantidade de termos que deseja exibir (n).
+const input = require("prompt-sync")();
+
+console.log("PROGRESSÃO ARITMÉTICA")
+let razao = 2;
+let primeiroTermo = 0;
+let quantidadeTermos = 9;
+
+for(let i = primeiroTermo; i <= quantidadeTermos; i++) {
+   let  = primeiroTermo + i * razao;
+    console.log(pa)
+}
