@@ -41,12 +41,12 @@ const livroFiccaoDesconto = livroFantasia.map(livros => ({
 livros.sort((a, b) => a.titulo.localeCompare(b.titulo))
 console.log(livros);
 
-const valorTotalEstoque = livros.reduce((livros, total) => {
+const valorTotalEstoque = livros.reduce((total, preco) => {
     let valor = total + livros.preco + livros.estoque;
     return valor
 }, 0)
 // Ordenar todos os livros pelo preço (do mais barato para o mais caro).
 // Calcular o valor total do estoque da livraria (preço × quantidade de cada livro).
-
+console.log(valorTotalEstoque);
 
 
